@@ -1,47 +1,110 @@
-# EV Battery Management System (BMS) with ESP32 Integration
+# EV-BMS-Simulator 🔋🚗
 
-## Overview
-
-This project implements an EV Battery Management System using Python and ESP32. It provides a graphical dashboard to monitor battery parameters and visualize battery performance.
+An Electric Vehicle Battery Management System (EV-BMS) Simulator developed using Python, Tkinter, ESP32, and sensors for battery monitoring, health prediction, and data logging.
 
 ## Features
 
-* Real-time battery monitoring dashboard
-* Battery percentage visualization
+* Real-time battery monitoring
+* Battery percentage estimation
+* Temperature monitoring
 * Voltage monitoring
-* Temperature monitoring support
 * Battery health prediction
-* Charge and discharge simulation
-* Range estimation
-* CSV data logging
-* Battery performance graph generation
-* ESP32 serial communication integration
+* Charge and discharge cycle tracking
+* Driving range estimation
+* Safety monitoring system
+* Data logging using CSV
+* Battery performance visualization using graphs
+* ESP32 hardware integration
+
+---
 
 ## Technologies Used
 
 * Python
 * Tkinter
-* Pandas
-* Matplotlib
 * ESP32
-* Arduino IDE
+* CSV Data Logging
+* Matplotlib
+* Serial Communication (PySerial)
 
-## Dashboard
+---
 
-![Dashboard](screenshots/dashboard.png)
+## Project Architecture
+
+ESP32 + Sensors
+↓
+Serial Communication
+↓
+Python Battery Management System
+↓
+Tkinter Dashboard
+↓
+CSV Data Logging
+↓
+Graph Visualization
+
+---
+
+## Dashboard Output
+
+### Dashboard – High Battery Level
+
+![Dashboard](dashboard%20at%20battery%2095%25.png)
+
+### Dashboard – Low Battery Level
+
+![Dashboard](dashboard%20at%20battery%2025%25.png)
+
+---
+
+## Battery Performance Graph
+
+![Graph](battery%20vs%20time%20graph.png)
+
+---
 
 ## Hardware Setup
 
-![Hardware](screenshots/hardware.jpg)
+![Hardware](hardware%20\(1\).jpeg)
 
-## Project Structure
+![Hardware](hardware%20\(2\).jpeg)
 
-* battery.py – Battery logic and monitoring
-* gui.py – Dashboard interface
-* main.py – Simulation runner
-* graph.py – Battery graph visualization
-* battery_log.csv – Logged battery data
+---
 
-## Outcome
+## Project Files
 
-Successfully developed a battery monitoring dashboard integrated with ESP32 for battery parameter visualization, prediction and logging.
+* `battery.py` → Battery management logic
+* `gui.py` → EV dashboard interface
+* `main.py` → Battery simulation execution
+* `graph.py` → Battery graph visualization
+* `battery_log.csv` → Logged battery data
+
+---
+
+## Future Improvements
+
+* Cloud monitoring
+* Mobile application integration
+* GPS tracking
+* Advanced battery analytics
+* IoT dashboard integration
+
+---
+
+## Author
+
+**Balaji Darshan**
+
+Electronics and Communication Engineering (ECE)
+
+---
+
+## Project Status
+
+✅ Functional Python EV-BMS Simulator
+
+✅ ESP32 Hardware Integration
+
+✅ Battery Monitoring Dashboard
+
+✅ Data Logging and Visualization
